@@ -34,28 +34,27 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'build/index.html': ['index.html']
+          'build/index.html': ['src/index.html']
         }
       }
     },
-    css: {
-      main: {
-        src: 'src/styles/*.css',
-        dest: 'build/styles.css',
-      }
-    },
+
     'gh-pages': {
       options: {
           base: 'build'
       },
       src: ['**']
     },
+
     watch: {
+      options: {
+        livereload: true,
+      },
       scripts: {
         files: ['js/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
-            spawn: false,
+          spawn: false,
         }
       } 
     }
@@ -75,7 +74,8 @@ module.exports = function(grunt) {
   // grunt.registerTask('default', ['concat']);
   // Custom tasks
   grunt.registerTask('deploy', ['gh-pages']);
-  grunt.registerTask('default', ['uglify','css','processhtml','watch']);
+  //grunt.registerTask('default', ['uglify','sass','processhtml','watch']);
+  grunt.registerTask('default', ['uglify','sass','processhtml']);
   
 };
 
