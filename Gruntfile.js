@@ -51,8 +51,8 @@ module.exports = function(grunt) {
         livereload: true,
       },
       scripts: {
-        files: ['js/*.js'],
-        tasks: ['concat', 'uglify'],
+        files: ['src/javascript/*.js'],
+        tasks: ['uglify'],
         options: {
           spawn: false,
         }
@@ -74,8 +74,7 @@ module.exports = function(grunt) {
   // grunt.registerTask('default', ['concat']);
   // Custom tasks
   grunt.registerTask('deploy', ['gh-pages']);
-  //grunt.registerTask('default', ['uglify','sass','processhtml','watch']);
-  grunt.registerTask('default', ['uglify','sass','processhtml']);
+  grunt.registerTask('default', ['uglify','sass','processhtml','watch']);
   
 };
 
