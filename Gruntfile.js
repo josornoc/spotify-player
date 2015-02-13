@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    copy: {
+    css: {
       main: {
         src: 'src/styles/*.css',
         dest: 'build/styles.css',
@@ -75,6 +75,7 @@ module.exports = function(grunt) {
   // grunt.registerTask('default', ['concat']);
   // Custom tasks
   grunt.registerTask('deploy', ['gh-pages']);
-  grunt.registerTask('default', ['uglify','copy','processhtml','watch']);
+  grunt.registerTask('default', ['uglify','css','processhtml','watch']);
+  
 };
 
