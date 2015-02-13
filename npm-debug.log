@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/opt/nvm/v0.10.35/bin/node',
+1 verbose cli   '/usr/local/opt/nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-processhtml',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink /usr/local/opt/nvm/v0.10.35/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-contrib-processhtml', null ]
+7 verbose cache add name=undefined spec="grunt-contrib-processhtml" args=["grunt-contrib-processhtml",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-contrib-processhtml',
+8 verbose parsed url   path: 'grunt-contrib-processhtml',
+8 verbose parsed url   href: 'grunt-contrib-processhtml' }
+9 silly lockFile 89f54e20-grunt-contrib-processhtml grunt-contrib-processhtml
+10 verbose lock grunt-contrib-processhtml /Users/josornoc/.npm/89f54e20-grunt-contrib-processhtml.lock
+11 silly lockFile 89f54e20-grunt-contrib-processhtml grunt-contrib-processhtml
+12 silly lockFile 89f54e20-grunt-contrib-processhtml grunt-contrib-processhtml
+13 verbose addNamed [ 'grunt-contrib-processhtml', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 2a2c8be9-grunt-contrib-processhtml grunt-contrib-processhtml@
+16 verbose lock grunt-contrib-processhtml@ /Users/josornoc/.npm/2a2c8be9-grunt-contrib-processhtml.lock
+17 silly addNameRange { name: 'grunt-contrib-processhtml', range: '*', hasData: false }
+18 verbose request where is /grunt-contrib-processhtml
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id db5a4315018a4cae
+21 verbose url raw /grunt-contrib-processhtml
+22 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-processhtml' ]
+23 verbose url resolved https://registry.npmjs.org/grunt-contrib-processhtml
+24 verbose request where is https://registry.npmjs.org/grunt-contrib-processhtml
+25 info trying registry request attempt 1 at 11:13:20
+26 http GET https://registry.npmjs.org/grunt-contrib-processhtml
+27 http 404 https://registry.npmjs.org/grunt-contrib-processhtml
+28 verbose headers { date: 'Fri, 13 Feb 2015 10:13:09 GMT',
+28 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '52',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   'x-served-by': 'cache-ams4120-AMS',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1423822389.061884,VS0,VE404',
+28 verbose headers   'keep-alive': 'timeout=10, max=50',
+28 verbose headers   connection: 'Keep-Alive' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Fri, 13 Feb 2015 10:13:09 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '52',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-ams4120-AMS',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1423822389.061884,VS0,VE404',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly lockFile 2a2c8be9-grunt-contrib-processhtml grunt-contrib-processhtml@
+31 silly lockFile 2a2c8be9-grunt-contrib-processhtml grunt-contrib-processhtml@
+32 error 404 404 Not Found: grunt-contrib-processhtml
+32 error 404
+32 error 404 'grunt-contrib-processhtml' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'spotify-player'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Darwin 11.4.2
+34 error command "/usr/local/opt/nvm/v0.10.35/bin/node" "/usr/local/opt/nvm/v0.10.35/bin/npm" "install" "grunt-contrib-processhtml" "--save"
+35 error cwd /Users/josornoc/ironhack/spotify-player
+36 error node -v v0.10.35
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]
