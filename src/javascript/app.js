@@ -42,23 +42,26 @@ function playAudio(song){
 
 	audio.addEventListener("playing", playingHandler);
 	audio.addEventListener("pause", pauseHandler);
-	audio.addEventListener("progress", progressHandler);
+	audio.addEventListener("timeupdate", timeUpdateHandler);
 	
 	audio.src = song.preview_url;
 	playBtn.addEventListener("click", playClickHandler);
 }
 
-function progressHandler(){
-	console.log('progressHandler');
+function timeUpdateHandler(event){
+
+	//console.log( event.target.currentTime + '/' + event.target.duration );
+	var per = (parseFloat(event.target.currentTime)/parseFloat(event.target.duration))*100;
+	var fin = (per*30)/100;
+	var seekBar = document.getElementsByClassName("seekbar")[0].firstElementChild;
+			seekBar.value = parseInt(fin);
 }
 
 function pauseHandler(){
-	console.log('---- pauseHandler ----');
 	audioIsPlaying = false;
 }
 
 function playingHandler(){
-	console.log('---- playingHandler ----');
 	audioIsPlaying = true;
 }
 
