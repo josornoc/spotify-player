@@ -1,0 +1,22 @@
+{
+  "name": "spotify-player",
+  "version": "1.0.0",
+  "description": "Last exercise of week 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josornoc/spotify-player.git"
+  },
+  "author": "josornoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josornoc/spotify-player/issues"
+  },
+  "homepage": "https://github.com/josornoc/spotify-player",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
